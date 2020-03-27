@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const {start} = require('..');
+const args = require('args');
+
+args.option('keys-dir', 'The directory where the keys are', '~/keys')
+args.option('host', 'The aws-iot host')
+args.option('id', 'The id of this device', 'home')
+args.option('action', 'The topic action', '433')
+
+const main = async() => {
+  const flags = args.parse(process.argv);
+  await start(flags);
+}
+
+main();
