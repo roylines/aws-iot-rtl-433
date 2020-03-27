@@ -5,7 +5,8 @@ const args = require('args');
 
 args.option('keys-dir', 'The directory where the keys are', '~/keys')
 args.option('host', 'The aws-iot host')
-args.option('id', 'The id of this device', 'home')
+args.option('location', 'The id of this location', 'home')
+args.option('device', 'The id of this device', 'hub-1')
 args.option('action', 'The topic action', '433')
 
 const main = async() => {
