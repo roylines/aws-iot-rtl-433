@@ -1,5 +1,5 @@
 {
-  "name": "aws-iot-rtl-433",
+  "name": "@roylines/aws-iot-rtl-433",
   "version": "1.0.0",
   "description": "cli that runs rtl_433, debounces and sends on to aws-iot",
   "main": "index.js",
@@ -13,10 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/roylines/aws-iot-rtl-433.git"
   },
-  "keywords": [
-    "rtl_433",
-    "aws-iot"
-  ],
+  "keywords": ["rtl_433", "aws-iot"],
   "author": "Roy Lines",
   "license": "MIT",
   "bugs": {
@@ -27,8 +24,8 @@
     "jest": "^25.2.3"
   },
   "dependencies": {
-    "@rauschma/stringio": "^1.4.0",
-    "args": "^5.0.1",
-    "async-mqtt": "^2.5.0"
+    "@rauschma/stringio": "1.4.0",
+    "args": "5.0.1",
+    "async-mqtt": "2.5.0"
   }
 }
